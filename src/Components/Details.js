@@ -39,15 +39,15 @@ class Details extends React.Component {
 
     componentDidMount() {
         const qs = queryString.parse(this.props.location.search);
-        const { restaurant } = qs;
-
+        const {restaurantId} = qs;
+         console.log ({restaurantId})
         axios({
-            url: `http://localhost:8989/api/restaurants/${restaurant}`,
+            url: `http://localhost:8989/api/restaurant/${restaurantId}`,
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
             .then(res => {
-                this.setState({ restaurant: res.data.restaurants, resId: restaurant })
+                this.setState({ restaurant: res.data.restaurant, resId: restaurantId})
             })
             .catch(err => console.log(err))
 

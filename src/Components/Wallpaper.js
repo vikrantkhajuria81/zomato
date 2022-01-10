@@ -73,7 +73,7 @@ class Wallpaper extends React.Component {
                 <img src="./Assets/homepageimg.png" width="100%" height="400px" />
                 <div>
                     <div className="logo">
-                        <p>e!</p>
+                        <p>zc</p>
                     </div>
 
                     <div className="headings">

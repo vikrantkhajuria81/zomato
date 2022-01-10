@@ -44,7 +44,7 @@ class Header extends React.Component {
             <div>
                 <div class="header">
                     <div class="header-logo">
-                        <b>e!</b>
+                        <b>zc</b>
                     </div>
                     {!isLoggedIn ?
                         <div class="user-group">
@@ -64,7 +64,7 @@ class Header extends React.Component {
                         <div class="glyphicon glyphicon-remove" style={{ float: 'right', marginBottom: '10px' }}
                             onClick={() => this.handleModal('loginModalIsOpen', false)}></div>
                         <GoogleLogin
-                            clientId="214934564540-vi1l5qarbeve27k6pi3u6bah5efqbu55.apps.googleusercontent.com"
+                            clientId="212008453545-48c1r0ue9lp231up315r94n9npj8rjpt.apps.googleusercontent.com"
                             buttonText="Continue with Google"
                             onSuccess={this.responseGoogle}
                             onFailure={this.responseGoogle}

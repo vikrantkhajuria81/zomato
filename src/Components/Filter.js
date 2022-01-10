@@ -24,8 +24,8 @@ class Filter extends React.Component {
         const { mealtype, location } = qs;
 
         const filterObj = {
-            mealtype_id: mealtype,
-            location_id: location
+            mealtype: mealtype,
+            location: location
         };
 
         axios({
@@ -126,8 +126,8 @@ class Filter extends React.Component {
             .catch(err => console.log(err))
     }
 
-    handleNavigate = (resId) => {
-        this.props.history.push(`/details?restaurant =${resId}`)
+    handleNavigate = (restaurantId) => {
+        this.props.history.push(`/details?id=${restaurantId}`)
     }
 
     render() {

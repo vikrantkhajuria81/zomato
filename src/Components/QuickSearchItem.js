@@ -15,7 +15,7 @@ class QuickSearchItem extends React.Component {
         const { quickSearchItemData } = this.props;
         return (
             <div>
-                <div className="col-sm-12 col-md-12 col-lg-4" onClick={() => this.handleNavigate(quickSearchItemData.mealtype_id)}>
+                <div className="col-sm-12 col-md-12 col-lg-4" onClick={() => this.handleNavigate(quickSearchItemData.meal_type)}>
                     <div className="tileContainer">
                         <div className="tileComponent1">
                             <img src={`./${quickSearchItemData.image}`} height="150" width="140" />
